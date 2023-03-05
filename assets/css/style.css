@@ -350,9 +350,12 @@ footer {
     background-position: 20%;
 }
 
-
-
-
+/* `extra-sm` applies to x-small devices (portrait phones, less than 576px) */
+@media screen and (max-width: 375.98px) {
+    .text-start i {
+        padding: 5px;
+    }
+}
 
 /* `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media screen and (max-width: 575.98px) {
