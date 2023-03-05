@@ -143,7 +143,7 @@
 
                     </div>
                     <div class="modal-footer justify-content-between">
-                        <p class="text-muted">&copy; 2017–<span id="year"></span>, All right reserved.</p>
+                        <p class="text-muted">&copy; 2017–<span class="year"></span>, All right reserved.</p>
                         <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -173,7 +173,7 @@
                         </div>
                     </div>
                     <div class="modal-footer justify-content-between">
-                        <p class="text-muted">&copy; 2017–<span id="year"></span>, All right reserved.</p>
+                        <p class="text-muted">&copy; 2017–<span class="year"></span>, All right reserved.</p>
                         <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -340,9 +340,9 @@
                     <div class="col-sm-6 col-lg-3">
                         <p class="h3 mb-md-4">Quick Links</p>
                         <div class="pt-2">
-                            <p class="mb-1"><small>&gt;</small> &nbsp;<a href="about.html" class="text-decoration-none text-capitalize link-footer">about us</a></p>
-                            <p class="mb-1"><small>&gt;</small> &nbsp;<a href="contact.html" class="text-decoration-none text-capitalize link-footer">contact us</a></p>
-                            <p class="mb-1"><small>&gt;</small> &nbsp;<a href="feature.html" class="text-decoration-none text-capitalize link-footer">our services</a></p>
+                            <p class="mb-1"><small>&gt;</small> &nbsp;<a href="javascript:void(0);" class="text-decoration-none text-capitalize link-footer" data-bs-target="#login" data-bs-toggle="modal">login</a></p>
+                            <p class="mb-1"><small>&gt;</small> &nbsp;<a href="signup.html" target="_blank" class="text-decoration-none text-capitalize link-footer">sign up</a></p>
+                            <p class="mb-1"><small>&gt;</small> &nbsp;<a href="javascript:void(0);" class="text-decoration-none text-capitalize link-footer" data-bs-target="#forgot" data-bs-toggle="modal">forgot password</a></p>
                             <p class="mb-1"><small>&gt;</small> &nbsp;<a href="assets/documents/terms and condition.pdf" class="text-decoration-none text-capitalize link-footer">terms &amp; conditions</a></p>
                             <p class="mb-1"><small>&gt;</small> &nbsp;<a href="javascript:void(0);" class="text-decoration-none text-capitalize link-footer" data-bs-toggle="modal" data-bs-target="#exampleModal">support</a></p>
                         </div>
@@ -382,7 +382,7 @@
             <div class="container">
                 <div class="row text-white text-center">
                     <div class="col-md-6 d-md-flex align-items-center text-center text-md-start">
-                        &copy;opyright <a href="#" routerLink="home" class="text-decoration-none link-warning"> &nbsp;Drivo.&nbsp;</a> 2017–<span id="year"></span>, All right reserved.
+                        &copy;opyright <a href="#" routerLink="home" class="text-decoration-none link-warning"> &nbsp;Drivo.&nbsp;</a> 2017–<span class="year"></span>, All right reserved.
                     </div>
                     <div class="col-md-6 text-md-end">
                         <p class="m-0">Designed By <a href="javascript:void(0);" class="link-warning text-decoration-none" data-bs-toggle="tooltip" data-bs-title="vinay GOLA &amp; deepak BISHT">GOBI Brothers</a></p>
@@ -422,6 +422,10 @@
                     }, false)
                 })
             })()
+            let today = new Date();
+            document.getElementsByClassName('year')[0].innerHTML = today.getFullYear()
+            document.getElementsByClassName('year')[1].innerHTML = today.getFullYear()
+            document.getElementsByClassName('year')[2].innerHTML = today.getFullYear()
         </script>
 
 </body>

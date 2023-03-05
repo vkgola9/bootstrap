@@ -97,7 +97,7 @@
         </div>
     </form>
     <div class="my-5 text-muted text-center">
-        <p class="mb-1">&copy;opyright 2017–<span id="year"></span> by Refsnes Data. All Rights Reserved.
+        <p class="mb-1">&copy;opyright 2017–<span class="year"></span> by Refsnes Data. All Rights Reserved.
         </p>
         <div class="mb-2">
             <a href="javascript:void(0);" class="text-success display-inline text-decoration-none">Privacy&nbsp;</a>
@@ -128,6 +128,8 @@
                 }, false)
             })
         })()
+        let today = new Date();
+        document.getElementsByClassName('year')[0].innerHTML = today.getFullYear()
     </script>
 </body>
 

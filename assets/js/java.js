@@ -13,9 +13,6 @@ window.addEventListener('scroll', function () {
     }
 });
 
-let today = new Date();
-document.getElementById('year').innerHTML = today.getFullYear()
-
 function myFunction() {
     document.getElementById("toggle").classList.toggle("search");
 }

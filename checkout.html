@@ -78,7 +78,7 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="col-md-6 col-lg-8 border-2 border p-1 p-sm-5">
+                        <div class="col-md-6 col-lg-8 border-2 border p-5">
                             <h4 class="mb-3">Applicant Details</h4>
                             <form action="response.html">
                                 <div class="row g-3">
@@ -262,7 +262,7 @@
                     </div>
             </main>
             <div class="my-5 text-muted text-center">
-                <p class="mb-1">&copy;opyright 2017–<span id="year"></span> by Refsnes Data. All Rights Reserved.
+                <p class="mb-1">&copy;opyright 2017–<span class="year"></span> by Refsnes Data. All Rights Reserved.
                 </p>
                 <div class="mb-2">
                     <a href="javascript:void(0);" class="text-success display-inline text-decoration-none">Privacy&nbsp;</a>
@@ -275,6 +275,10 @@
     </section>
     <script src="assets/js/java.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let today = new Date();
+        document.getElementsByClassName('year')[0].innerHTML = today.getFullYear()
+    </script>
 </body>
 
 </html>
