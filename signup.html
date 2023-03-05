@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign up drivo. - Driving School</title>
+    <title></title>
+    <link rel="shortcut icon" href="assets/images/fav-ico.png" type="image/x-icon">
+    <!-- styling -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+    <div class="spin d-flex align-items-center justify-content-center position-fixed top-0 start-0 w-100 h-100" style="z-index: 101; background-color: #111;">
+        <div class=" spinner-border text-warning" style="width: 3rem; height: 3rem;" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+    <div class="row mb-3 mt-5 text-center">
+        <div class="navbar-brand text-capitalize">
+            <p class="display-4 fw-bold "><i class="fa-solid fa-car text-warning"></i> drivo.</p>
+        </div>
+        <p class="p-0 px-4">Sign up here to get your login id and password for more conveniently.</p>
+    </div>
+    <form class="row needs-validation d-flex align-items-center justify-content-center" novalidate>
+        <div class="bg-white col-lg-5 col-10 border border-2 p-5 rounded-4">
+            <div class="d-lg-flex align-items-center justify-content-center gap-1 w-100">
+                <div class="col-12 col-md-6">
+                    <label for="validationTooltip01" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="validationTooltip01" required>
+                </div>
+                <div class="col-12 col-md-6">
+                    <label for="validationTooltip02" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="validationTooltip02" required>
+                </div>
+            </div>
+
+            <div class="w-100">
+                <label for="validationTooltip02" class="form-label">number</label>
+                <input type="text" class="form-control" id="validationTooltip02" value="+91 " required>
+            </div>
+            <label for="validationTooltipUsername" class="form-label">Username</label>
+            <div class="input-group has-validation">
+                <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+            </div>
+            <div class="w-100">
+                <label for="validationTooltip02" class="form-label">Create password</label>
+                <input type="text" class="form-control" id="validationTooltip02" required>
+            </div>
+            <div class="w-100">
+                <label for="validationTooltip02" class="form-label">Confirm password</label>
+                <input type="text" class="form-control" id="validationTooltip02" required>
+            </div>
+            <div class="d-lg-flex align-items-center justify-content-center gap-1 my-2">
+                <div class="col-md-6 w-lg-50">
+                    <label for="validationTooltip03" class="form-label">City</label>
+                    <input type="text" class="form-control" id="validationTooltip03" required>
+                </div>
+                <div class="col-md-6 w-lg-50">
+                    <label for="validationTooltip04" class="form-label">State</label>
+                    <select class="form-select" id="validationTooltip04" required>
+                        <option>select</option>
+                        <option>delhi</option>
+                        <option>delhi-nCR</option>
+                        <option>mumbai</option>
+                        <option>kolkata</option>
+                        <option>chennai</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row g-1">
+                <div class="col-md-6">
+                    <label for="validationTooltip05" class="form-label">Country</label>
+                    <input type="text" class="form-control" id="validationTooltip05" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="validationTooltip05" class="form-label">Zip</label>
+                    <input type="text" class="form-control" id="validationTooltip05" required>
+                </div>
+            </div>
+            <div class="form-check my-2">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                <label class="form-check-label" for="flexCheckDefault">
+                    By creating an account you agree to our <a href="javascript:void(0);" class="link-success"> Terms & Privacy</a>.
+                </label>
+            </div>
+            <div class="col-12">
+                <button class="w-100 mt-3 btn btn-primary" type="submit">Submit form</button>
+            </div>
+        </div>
+    </form>
+    <div class="my-5 text-muted text-center">
+        <p class="mb-1">&copy;opyright 2017–<span id="year"></span> by Refsnes Data. All Rights Reserved.
+        </p>
+        <div class="mb-2">
+            <a href="javascript:void(0);" class="text-success display-inline text-decoration-none">Privacy&nbsp;</a>
+            <a href="javascript:void(0);" class="text-success display-inline text-decoration-none">Terms &amp; conditions</a>
+            <a href="javascript:void(0);" class="text-success display-inline text-decoration-none">&nbsp;Support</a>
+        </div>
+        <a class="navbar-brand text-capitalize" href="index.html"><i class="fa-solid fa-car text-warning"></i> drivo.</a>
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/java.js"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+</body>
+
+</html>
