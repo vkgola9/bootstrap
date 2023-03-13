@@ -24,7 +24,7 @@
             <span class="visually-hidden">Loading...</span>
         </div>
     </div>
-    <div class="whatsapp"><a href="https://api.whatsapp.com/send/?phone=593958762266&text&type=phone_number&app_absent=0" target="_blank"> <img src="assets/images/whatsapp.png" alt="whatsapp" class="position-fixed z-index-20 bottom-0 ms-4 mb-4" style="width: 3rem;"></a></div>
+    <div class="whatsapp"><a href="https://wa.link/xzprea" target="_blank"> <img src="assets/images/whatsapp.png" alt="whatsapp" class="position-fixed z-index-20 bottom-0 ms-4 mb-4" style="width: 3rem;"></a></div>
     <header id="top1">
         <div class="topbar d-none d-lg-inline">
             <div class="container-fliud text-bg-dark">
@@ -66,7 +66,7 @@
                         </div>
                     </div>
                     <div class="col p-0 me-1">
-                        <div class="text-end me-1">
+                        <div class="text-end">
                             <p class="d-inline" onclick="myFunction1()"> <small> <i class="btn link-warning border-end border-end-warning rounded-0 pe-3 fa-solid fa-magnifying-glass opacity1 me-auto"></i></small></p>
                             <p class="d-inline" data-bs-target="#login" data-bs-toggle="modal"> <small> <i class="transparent text rounded-0 px-2 py-2 ms-2 fa-solid fa-user-plus font-10">login</i></small></p>
                         </div>
@@ -88,7 +88,7 @@
             <div class="collapse navbar-collapse ps-5" id="collapsibleNavId">
                 <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase me-3 fw-600 text" href="index.html" aria-current="page">Home</a>
+                        <a class="nav-link text-uppercase me-3 fw-600 active" href="index.html" aria-current="page">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-uppercase me-3 fw-600 text" href="about.html">about</a>
@@ -97,7 +97,7 @@
                         <a class="nav-link text-uppercase me-3 fw-600 text" href="course.html">courses</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-uppercase me-3 fw-600 active" href="#" role="button" data-bs-target="#dropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-uppercase me-3 fw-600 text" href="#" role="button" data-bs-target="#dropdown1" data-bs-toggle="dropdown" aria-expanded="false">
                             pages
                         </a>
                         <ul class="dropdown-menu bg-light w-50" id="dropdown1">
@@ -123,7 +123,7 @@
                             <img class="shadow-lg rounded-circle bg-success" src="assets/images/login.png" alt="login">
                         </div>
                         <div class="mt-5">
-                            <form action="https://parivahan.gov.in/parivahan/en/content/driving-licence-0" target="_blank">
+                            <form action="https://parivahan.gov.in/parivahan/en/content/driving-licence-0" target="_blank" class="needs-validation" novalidate>
                                 <div class="form-floating mb-3">
                                     <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" required />
                                     <label for="floatingInput">User name</label>
@@ -162,7 +162,7 @@
                             <div class="text-center text-capitalize fs-5 my-3">
                                 enter here your phone number to get otp
                             </div>
-                            <form action="response.html">
+                            <form action="response.html" class="needs-validation" novalidate>
                                 <div class="form-floating mb-3">
                                     <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
                                     <label for="floatingInput" class="text-capitalize">+91...</label>
@@ -184,7 +184,7 @@
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
-                    <form action="response.html">
+                    <form action="response.html" class="needs-validation" novalidate>
                         <div class="modal-header bg-warning shadow-sm text-white">
                             <h1 class="modal-title fs-5 text-capitalize" id="exampleModalLabel"> get instant support</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -203,7 +203,7 @@
                                 <label class="text-capitalize" for="floatingPassword"><i class="fa-solid fa-phone"></i> contact no.</label>
                             </div>
                             <div class="form-floating">
-                                <select class="form-select mt-3" id="floatingSelect" aria-label="Floating label select example">
+                                <select class="form-select mt-3" id="floatingSelect" readonly>
                                     <option selected>Select Location</option>
                                     <option class="text-capitalize" value="1">delhi</option>
                                     <option class="text-capitalize" value="1">delhi-nCR</option>
@@ -216,7 +216,7 @@
                                 </select>
                                 <label class="text-capitalize" for="floatingSelect"><i class="fa-solid fa-location-arrow"></i> region</label>
                                 <div class="form-floating mt-3">
-                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required />
+                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
                                     <label class="text-capitalize" for="floatingPassword"><i class="fa-solid fa-car"></i> package</label>
                                 </div>
                                 <div class="form-check mt-3">
@@ -270,7 +270,7 @@
                                 <div class="container">
                                     <div class="row">
                                         <div class="m-auto col-12">
-                                            <form action="response.html" target="_blank" method="get" class="">
+                                            <form action="response.html" target="_blank" method="get" class="needs-validation" novalidate>
                                                 <div class="col">
                                                     <p class="text-center display-5 fw-600 text-capitalize text-dark pb-3"> make Appointment</p>
                                                 </div>
@@ -305,7 +305,7 @@
                                                 <div class="row">
                                                     <div class="col">
                                                         <div class="form-floating">
-                                                            <textarea class="form-control h-100 bg-light shadow" placeholder="Leave a comment here" id="floatingTextarea" cols="25" rows="5"></textarea>
+                                                            <textarea class="form-control h-100 bg-light shadow" placeholder="Leave a comment here" id="floatingTextarea" cols="25" rows="5" readonly></textarea>
                                                             <label class="text-capitalize text-muted" for="floatingTextarea">message</label>
                                                         </div>
                                                     </div>
